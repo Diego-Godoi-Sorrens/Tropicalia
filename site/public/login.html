@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login  | Tropicália </title>
+    
+    <link rel="stylesheet" href="./css/caroussel_style.css">
+    <script src="./js/Funcionalidade.js"></script>
+    <script src="./js/funcoes.js"></script>
+</head>
+
+<body>
+    
+    <div class="banner_login">
+        <div class="container">
+
+            <div class="contorno"></div>
+
+            <div class="card_login">
+
+                <div class="mensagem"><span class="inicial">O</span>lá de volta!<div class="barra"></div></div>
+
+                <div class="label">
+                    <h4> Email: </h4>
+                    <input id="input_email" type="text">
+                    <div class="aviso" id="aviso1"></div>
+
+                    <h4> Senha: </h4>
+                    <input id="input_senha" type="password">
+                    <div class="aviso" id="aviso2"></div><br><br>
+
+                    <div class="aviso" id="div_aviso"></div>
+
+                </div>
+            </div>
+
+            <div class="card_botoes">
+                <button onclick="go_cadastro()" class="btn_2">Cadastre-se</button>
+                <button onclick="entrar()" class="btn_1">Entrar</button>
+            </div>
+            
+            <div class="card_img">
+                <img src="./assets/img/bkg_08.jpg">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+
+    function entrar() {
+
+        var emailVar = input_email.value;
+        var senhaVar = input_senha.value;
+
+        // TODO: VERIFICAR AS VALIDAÇÕES QUE ELES ESTÃO APRENDENDO EM ALGORITMOS 
+        if (emailVar == "" || senhaVar == "") {
+            div_aviso.innerHTML = "Preencha todos os campos para prosseguir!";
+            return false;
+        }
+
+        else if (emailVar.indexOf("@") == -1 || emailVar.indexOf(".com") == -1) {
+            div_aviso.innerHTML = "Ops, e-mail inválido! Verifique e tente novamente.";
+            return false;
+        }
+
+        console.log("FORM LOGIN: ", emailVar);
+        console.log("FORM SENHA: ", senhaVar);
+
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
+
+            if (resposta.ok) {
+                console.log(resposta);
+
+                resposta.json().then(json => {
+                    console.log(json);
+                    console.log(JSON.stringify(json));
+
+                    sessionStorage.EMAIL_USUARIO = json.email;
+                    sessionStorage.NOME_USUARIO = json.nomeUsuario;
+                    sessionStorage.ID_USUARIO = json.idUsuario;
+                    sessionStorage.FK_EMPRESA = json.fkEmpresa;
+
+                    setTimeout(function () {
+                        alert("Bem vindo");
+                        window.location = "Dashboard/MeusRefrigeradores.html";
+                    }, 1000); // apenas para exibir o loading
+
+                });
+
+            } else {
+                div_aviso.innerHTML = "Usuário ou senha incorretos";
+                console.log("Houve um erro ao tentar realizar o login!");
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    // finalizarAguardar(texto);
+                });
+            }
+
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+
+        return false;
+    }
+
+</script>
