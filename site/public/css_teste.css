@@ -9,12 +9,12 @@ body{
 
 @font-face{
     font-family: 'gill-sans-ultra-bold-regular';
-    src: url(./img/GillSansUltraBold.ttf);
+    src: url(./assets/img/GillSansUltraBold.ttf);
 }
 
 @font-face{
     font-family: vintageQueens;
-    src: url(./img/VintageQueens-PersonalUse.ttf);
+    src: url(./assets/img/VintageQueens-PersonalUse.ttf);
 }
 
 .barra_geral{
@@ -501,5 +501,113 @@ body{
     width: 100%;
     /* height: 50%; */
     transform: scale(150%);
+    /* transform: translate(-500px); */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.banner_fim_1 {
+    display: flex;
+    /* padding-top: 5vh; */
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f38e1b;
+    color: #000;
+    /* padding-left: 50px; */
+}
+
+.banner_fim_1 .container{
+    display: flex;
+    /* border: 2px solid red; */
+    /* flex-direction: row; */
+    width: 100%;
+    height: 100%;
+}
+
+.banner_fim_1  .container .content{
+    /* border: 2px solid red; */
+    font-size: 22px;
+    width: 60%;
+    height: 100%;
+    padding-left: 5%;
+
+}
+
+.banner_fim_1  .container .container_titulo{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 25vw;
+    font-size: 23px;
+    font-family: 'gill-sans-ultra-bold-regular';
+}
+.banner_fim_1  .container .container_titulo .citacao{
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+    height: 60%;
+    padding: 10% 15% 0 15%;
+    background-color: rgb(179, 112, 12);
+    /* border: 2px solid red; */
+}
+.banner_fim_1  .container .container_titulo .fim{
+    width: 100%;
+    height: 40%;
+    font-size: 5.7em;
+    /* transform: translateY(1000); */
+    z-index: 100;
+    transform: translate(10px, -50%);
+    color: aqua;
+}
+.banner_fim_1  .container .container_titulo .fim .f{
+    font-size: 2.3em;
+    font-family: vintageQueens;
+}
+
+
+.banner_fim_1  .container .content .p8{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 22px;
+    width: 90%;
+    height: 100%;
+    text-align: justify;
+}
+
+.imgs_fim_1{
+    display: flex;
+    align-items: flex-end;
+    /* padding-top: 8%; */
+    width: 44vw;
+    height: 100%;
+    /* border: 2px solid red; */
+
+    /* transform: scale(150%);
+    transform: translate(-500px); */
+}
+
+.imgs_fim_1 img{
+    /* width: 100%; */
+    height: 550px;
+    object-fit: cover;
+    /* transform: scale(150%); */
     /* transform: translate(-500px); */
 }
