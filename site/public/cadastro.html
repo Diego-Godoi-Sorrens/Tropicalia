@@ -74,23 +74,23 @@
         var confirmacaoSenhaVar = input_usuario_confirmar_senha.value;
 
         if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
-            // cardErro.style.display = "block"
-            // mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
             div_aviso.innerHTML = "*Preencha todos os campos para prosseguir!";
 
 
             finalizarAguardar();
             return false;
         }
-        else if(nomeUsuario.length > 90){
-            div_aviso.innerHTML = '*Limite de 90 caracteres excedido!'
-        }
-        else if(email.indexOf('@') <= 0 || email.indexOf('.com') == -1){
-            div_aviso.innerHTML = '*Email inválido!'
-        }
-        else if(confirmarSenha != senha){
-            div_aviso.innerHTML = '*As senhas não estão iguais!'
-        }
+        // else if(nomeUsuario.length > 90){
+        //     div_aviso.innerHTML = '*Limite de 90 caracteres excedido!'
+        // }
+        // else if(email.indexOf('@') <= 0 || email.indexOf('.com') == -1){
+        //     div_aviso.innerHTML = '*Email inválido!'
+        // }
+        // else if(confirmarSenha != senha){
+        //     div_aviso.innerHTML = '*As senhas não estão iguais!'
+        // }
         else {
             setInterval(sumirMensagem, 5000)
         }

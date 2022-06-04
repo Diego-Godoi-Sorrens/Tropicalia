@@ -371,6 +371,13 @@ section.module.paralax h1 {
   font-size: 3em;
 }
 
+.sqn{
+  color: #2ba99d;
+}
+.sqn .inicial{
+  font-family: vintageQueens;
+  font-size: 3em;
+}
 
 /* Inicio Contexto Historico /////////////////////////////////////////////// br anos 60 //////////////////////////////// */
 .barra_geral_1 {
@@ -478,6 +485,28 @@ section.module.paralax h1 {
   left: 50%;
   top: 92%;
   width: 50%;
+  height: 4px;
+  position: absolute;
+  /* transform: translate(-300px); */
+  background-color: #2ba99d;
+  z-index: 2000;
+}
+
+.barra_geral_11 {
+  left: 50%;
+  top: 92%;
+  width: 150%;
+  height: 4px;
+  position: absolute;
+  transform: translate(-750px);
+  background-color: #2ba99d;
+  z-index: 2000;
+}
+
+.barra_geral_12 {
+  right: 60%;
+  top: 92%;
+  width: 40%;
   height: 4px;
   position: absolute;
   /* transform: translate(-300px); */
@@ -1043,6 +1072,215 @@ section.module.paralax h1 {
   object-fit: cover;
 }
 
+
+
+
+
+.banner_fim_2 {
+  position: sticky;
+  display: flex;
+  /* padding-top: 5vh; */
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f36a1a;
+  color: #000;
+  /* padding-left: 50px; */
+}
+
+.banner_fim_2 .container{
+  display: flex;
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 100%;
+}
+
+.banner_fim_2  .container .content{
+  /* border: 2px solid red; */
+  font-size: 22px;
+  width: 60%;
+  height: 100%;
+  padding-left: 5%;
+}
+
+.banner_fim_2  .container .content .p9{
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 25px;
+  width: 90%;
+  height: 100%;
+  /* text-align: justify; */
+}
+
+.imgs_fim_2{
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid red; */
+}
+
+.imgs_fim_2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner_fim_2  .container .citacao{
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  width: 40vw;
+  height: 60%;
+  background-color: #2ba99d;
+  font-size: 25px;
+  font-family: 'gill-sans-ultra-bold-regular';
+}
+
+
+.banner_fim_3 {
+  position: sticky;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f36a1a;
+  color: #000;
+}
+
+.banner_fim_3 .container{
+  display: flex;
+  /* border: 2px solid red; */
+  /* flex-direction: initial; */
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.banner_fim_3  .container .content{
+  /* border: 2px solid red; */
+  display: flex;
+  width: 95%;
+  height: 100%;
+  padding-left: 5%;
+}
+
+.banner_fim_3  .container .content .p10{
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 30px 40px 300px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 23px;
+  width: 60%;
+  height: 80%;
+  text-align: justify;
+  background-color: brown;
+  bottom: 10%;
+}
+.banner_fim_3  .container .content .p10 p{
+  /* border: 2px solid red; */
+  padding-left: 10%;
+  width: 90%;
+  height: 80%;
+  color: #000;
+}
+
+.imgs_fim_3{
+  display: flex;
+  align-items: flex-end;
+  width: 20%;
+  height: 100%;
+  /* border: 2px solid red; */
+  z-index: 10;
+}
+
+.imgs_fim_3 img{
+  /* width: 250%; */
+  height: 90%;
+  transform: translate(20px, 0px);
+}
+
+
+
+
+.banner_fim_4 {
+  position: sticky;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f36a1a;
+  color: #000;
+}
+
+.banner_fim_4 .container{
+  display: flex;
+  /* border: 2px solid red; */
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.banner_fim_4  .container .content{
+  /* border: 2px solid red; */
+  display: flex;
+  width: 95%;
+  height: 100%;
+  padding-left: 5%;
+}
+
+.banner_fim_4  .container .content .textos{
+  width: 50%;
+  height: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-family: 'gill-sans-ultra-bold-regular';
+}
+.banner_fim_4  .container .content .p11{
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Source Code Pro', monospace;
+  padding: 5%;
+  width: 90%;
+  height: 60%;
+  background-color: #2ba99d;
+}
+.banner_fim_4  .container .content .p12{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+  font-size: 23px;
+  color: #2ba99d;
+  padding: 5%;
+  width: 90%;
+  height: 20%;
+  text-align: justify;
+}
+
+.imgs_fim_4{
+  display: flex;
+  width: 50%;
+  height: 100%;
+  /* border: 2px solid red; */
+  z-index: 10;
+}
+
+.imgs_fim_4 img{
+  height: 90%;
+  transform: translate(-180px, 30px)
+}
 /* Inicio Login ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .banner_cadastro .container,
