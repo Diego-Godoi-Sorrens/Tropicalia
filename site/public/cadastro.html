@@ -82,20 +82,18 @@
             finalizarAguardar();
             return false;
         }
-        // else if(nomeUsuario.length > 90){
-        //     div_aviso.innerHTML = '*Limite de 90 caracteres excedido!'
-        // }
-        // else if(email.indexOf('@') <= 0 || email.indexOf('.com') == -1){
-        //     div_aviso.innerHTML = '*Email inválido!'
-        // }
-        // else if(confirmarSenha != senha){
-        //     div_aviso.innerHTML = '*As senhas não estão iguais!'
-        // }
-        else {
-            setInterval(sumirMensagem, 5000)
+        else if(nomeVar.length > 90){
+            div_aviso.innerHTML = '*Limite de 90 caracteres excedido!'
         }
-
-        // Enviando o valor da nova input
+        else if(emailVar.indexOf('@') <= 0 || emailVar.indexOf('.com') == -1){
+            div_aviso.innerHTML = '*Email inválido!'
+        }
+        else if(confirmacaoSenhaVar != senhaVar){
+            div_aviso.innerHTML = '*As senhas não estão iguais!'
+        }
+        else {
+            // setInterval(sumirMensagem, 5000)
+            // Enviando o valor da nova input
         fetch("/usuarios/cadastrar", {
             method: "POST",
             headers: {
@@ -128,11 +126,15 @@
             }
         }).catch(function (resposta) {
             console.log(`#ERRO: ${resposta}`);
-            finalizarAguardar();
+            // finalizarAguardar();
         });
 
-        return false;
+            return false;
+        }
+    
     }
+
+        
 
     // function sumirMensagem() {
     //     cardErro.style.display = "none"
