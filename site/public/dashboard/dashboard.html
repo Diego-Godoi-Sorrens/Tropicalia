@@ -2,14 +2,15 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="shortcut icon" href="../assets/icon/favicon.ico" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="../assets/icon/favicon.ico" type="image/x-icon"> -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AcquaTec | Dashboards</title>
+    <title>Tropicália | Principais Artistas</title>
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="dashboards.css">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <!-- <link rel="stylesheet" href="dashboards.css"> -->
+    <link rel="stylesheet" href="./dashboard.css">
     <script src="../js/funcoes.js"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -24,7 +25,24 @@
 
 <body onload="validarSessao(), atualizarFeed()">
 
-    <div class="janela">
+    <div class="header">
+        <h1><a>☰</a></h1>
+
+        <div class="btn-sair" onclick="limparSessao()">
+            <h3>Sair</h3>
+        </div>
+    </div>    
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="janela">
         <div class="header-left">
             <h1>AcquaTec</h1>
 
@@ -58,7 +76,7 @@
 
         <div class="dash">
             <div class="btns-dash">
-                <!-- O gráfico é chamado de acordo com o id (fk_aquario) do banco  -->
+                O gráfico é chamado de acordo com o id (fk_aquario) do banco
                 <button class="btn-chart btn-pink" onclick="obterDadosGrafico(1)">Aquario 1</button>
                 <button class="btn-chart btn-white" onclick="obterDadosGrafico(2)">Aquario 2</button>
                 <button class="btn-chart btn-white" onclick="obterDadosGrafico(3)">Aquario 3</button>
@@ -73,7 +91,7 @@
                 <canvas id="canvas_grafico"></canvas>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 </body>

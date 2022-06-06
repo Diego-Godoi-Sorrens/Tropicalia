@@ -51,13 +51,13 @@ function color(){
 
 /* Funções da página de cadastro */////////////////////////////////////////////////////////////////////
 
-function enviar_solicitacao(){
-    window.onbeforeunload = () => {
-        for(const form of document.getElementsByTagName('form')) {
-          form.reset();
-        }
-    }
-}
+// function enviar_solicitacao(){
+//     window.onbeforeunload = () => {
+//         for(const form of document.getElementsByTagName('form')) {
+//           form.reset();
+//         }
+//     }
+// }
 
 /* Término das funções da página cadastro */////////////////////////////////////////////////////////////
 

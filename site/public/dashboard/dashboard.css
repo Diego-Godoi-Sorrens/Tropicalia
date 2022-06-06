@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /* border: 0; */
+    /* overflow: none; */
+    box-sizing: border-box;
+    background-color: #f3a81b;
+}
+
+@font-face {
+    font-family: vintageQueens;
+    src: url(../assets/img/VintageQueens-PersonalUse.ttf);
+}
+  
+@font-face {
+    font-family: gill-sans-ultra-bold-regular;
+    src: url(../assets/img/GillSansUltraBold.ttf);
+}
+
+.header{
+    height: 100vh;
+    width: 5vw;
+    background-color: #ff1973;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.btn-sair{
+    display: flex;
+    /* align-items: flex-start; */
+    /* width: 400%; */
+    border: #f3a81b solid 1px;
+    /* flex-direction: column-reverse; */
+    transform: rotate(-90deg);
+    font-size: 2em;
+    color: #14d3b8;
+    font-family: gill-sans-ultra-bold-regular;
+
+}
+
+h1 a {
+    display: flex;
+    height: 100%;
+    border: #f3a81b solid 1px;
+    font-size: 1em;
+    color: #14d3b8;
+    font-family: gill-sans-ultra-bold-regular;
+}
