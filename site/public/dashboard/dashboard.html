@@ -24,17 +24,58 @@
 </head>
 
 <!-- <body onload="validarSessao(), atualizarFeed()"> -->
-<body>
+<body> 
 
-    <div class="header">
-        <h1><a>☰</a></h1>
+    <div class="banner">
 
-        <div class="btn-sair" onclick="limparSessao()">
-            <h3>Sair</h3>
+        <div class="header_v">
+
+            <h1><a>☰</a></h1>
+
+            <div class="btn-sair" onclick="limparSessao()">
+                <h3>sair</h3>
+            </div>
+
         </div>
-    </div>    
 
+        <div class="header_h">
+            <div class="btn-index" onclick="go_index()">
+                <h3>Tropicália</h3>
+            </div>
+        </div>    
+            
+        <div class="container">
 
+            <div class="lado">
+                <div class="card_titulo"> <span class="inicial">P</span>rincipais  <span class="inicial">A</span>rtistas</div>
+
+                <div class="card_artistas">
+                    <div class="artista" onclick="caetano()"> 
+                        <!-- <img src="../assets/img/tropicalismo_img1.jpg">  -->
+                    </div>
+
+                    <div class="artista" onclick="gil()"> 
+                        <!-- <img src="../assets/img/tropicalismo_img1.jpg">  -->
+                    </div>
+
+                    <div class="artista" onclick="mutantes()"> 
+                        <!-- <img src="../assets/img/tropicalismo_img1.jpg">  -->
+                    </div>
+
+                    <div class="artista" onclick="gal()"> 
+                        <!-- <img src="../assets/img/tropicalismo_img1.jpg">  -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="lado">
+
+            <div class="card_grafico">
+                <!-- <canvas id="grafico"></canvas> -->
+            </div>
+
+        </div>
+    </div>
 
 
 

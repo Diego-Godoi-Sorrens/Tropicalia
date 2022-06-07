@@ -9,7 +9,7 @@ body{
     /* border: 0; */
     /* overflow: none; */
     box-sizing: border-box;
-    background-color: #f3a81b;
+    /* overflow: hidden; */
 }
 
 @font-face {
@@ -22,35 +22,146 @@ body{
     src: url(../assets/img/GillSansUltraBold.ttf);
 }
 
-.header{
-    height: 100vh;
+.header_v{
+    height: 95vh;
     width: 5vw;
-    background-color: #ff1973;
+    border-top: #ff1973 solid 0px;
+    border-left: #ff1973 solid 0px;
+    border-right: #ff1973 solid 4px;
+    border-bottom: #ff1973 solid 4px;
+    /* background-color: #ff1973; */
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-
 }
 
 .btn-sair{
     display: flex;
-    /* align-items: flex-start; */
-    /* width: 400%; */
-    border: #f3a81b solid 1px;
-    /* flex-direction: column-reverse; */
+    position: relative;
+    bottom: 5vh;
     transform: rotate(-90deg);
     font-size: 2em;
-    color: #14d3b8;
+    color: #2ba99d;
     font-family: gill-sans-ultra-bold-regular;
-
+}
+.btn-sair:hover{
+    color: #ff1973;
 }
 
 h1 a {
     display: flex;
     height: 100%;
-    border: #f3a81b solid 1px;
-    font-size: 1em;
-    color: #14d3b8;
+    /* border: #f3a81b solid 1px; */
+    font-size: 1.5em;
+    color: #2ba99d;
     font-family: gill-sans-ultra-bold-regular;
 }
+
+.header_h{
+    height: 10vh;
+    width: 90vw;
+    position: absolute;
+    border-top: #ff1973 solid 0px;
+    border-left: #ff1973 solid 0px;
+    border-right: #ff1973 solid 4px;
+    border-bottom: #ff1973 solid 4px;
+    /* background-color: #ff1973; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    top: 0;
+}
+
+.btn-index{
+    display: flex;
+    /* position: relative; */
+    bottom: 5vh;
+    /* transform: rotate(-90deg); */
+    font-size: 2em;
+    color: #2ba99d;
+    font-family: gill-sans-ultra-bold-regular;
+    margin-right: 2%;
+}
+
+.banner{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to left, #f3a81b, #f36a1a);
+}
+
+.banner .container{
+    /* border:  solid 1px; */
+    display: flex;
+    align-self: flex-end;
+    /* align-items: center;
+    justify-content: center; */
+    width: 100%;
+    height: 88%;
+}
+
+.lado{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1%;
+}
+
+.card_titulo{
+    width: 100%;
+    height: 24%;
+    background-color: #250c84;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.6em;
+    font-family: gill-sans-ultra-bold-regular;
+    color: #ff1973;
+}
+
+.inicial{
+    font-family: vintageQueens;
+    font-size: 2em;
+}
+
+.card_artistas{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* border:  solid 1px; */
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.artista{
+    display: flex;
+    width: 48%;
+    height: 42%;
+    border-radius: 20px;
+    background-image: url(../assets/img/tropicalismo_img1.jpg);
+    background-size: cover;
+    margin: 0.3%;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
+    /* filter: saturate(0.5); */
+    transition: all 1s;
+}
+.artista:hover{
+    transform: scale(104%)
+    
+}
+
+/* .artista img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+} */
+
