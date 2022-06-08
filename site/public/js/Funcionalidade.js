@@ -1,7 +1,7 @@
 /* Função do Header *//////////////////////////////////////////////////////////////////////////////////////
 
 function go_index() {
-    window.location.href = "index.html";
+    window.location.href = "../index.html";
 }
 
 function go_login() {

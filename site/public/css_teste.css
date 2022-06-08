@@ -822,3 +822,48 @@ body{
     height: 90%;
     transform: translate(-180px, 30px)
 }
+
+.avaliacao{
+    display: flex;
+    flex-direction: column;
+    background-color: #f38e1b;
+}
+
+.rating{
+
+    display: flex;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 40%;
+    background-color: #220377;
+    border-radius: 42px;
+}
+
+/* .rating input{
+    display: none;
+}
+.rating label{
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    background: #ccc;
+}
+.rating label::before{
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 50px;
+    color: #101010;
+} */
+
+.star{
+    font-size: 3em;
+    color: #f3a81b;
+    background-color: unset;
+    border: none;
+}.star:hover{
+    cursor: pointer;
+}

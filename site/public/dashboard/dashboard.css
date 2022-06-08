@@ -32,7 +32,7 @@ body{
     /* background-color: #ff1973; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -44,52 +44,78 @@ body{
     font-size: 2em;
     color: #2ba99d;
     font-family: gill-sans-ultra-bold-regular;
+    transition: all 0.5s;
+    z-index: 10;
 }
 .btn-sair:hover{
-    color: #ff1973;
+    color: #250c84;
+    cursor: pointer;
 }
 
-h1 a {
+.abrir-dash{
+    background: none;
+    border: 0;
+}
+
+.abrir-dash {
     display: flex;
     height: 100%;
     /* border: #f3a81b solid 1px; */
     font-size: 1.5em;
     color: #2ba99d;
     font-family: gill-sans-ultra-bold-regular;
+    transition: all 0.5s;
+    z-index: 10;
+} 
+.abrir-dash:hover{
+    color: #250c84;
+    cursor: pointer;
 }
 
 .header_h{
     height: 10vh;
-    width: 90vw;
+    width: 80vw;
     position: absolute;
     border-top: #ff1973 solid 0px;
     border-left: #ff1973 solid 0px;
-    border-right: #ff1973 solid 4px;
+    border-right: #ff1973 solid 0px;
     border-bottom: #ff1973 solid 4px;
     /* background-color: #ff1973; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-end;
     top: 0;
 }
 
 .btn-index{
     display: flex;
-    /* position: relative; */
     bottom: 5vh;
-    /* transform: rotate(-90deg); */
     font-size: 2em;
     color: #2ba99d;
     font-family: gill-sans-ultra-bold-regular;
     margin-right: 2%;
+    z-index: 10;
+    transition: all 0.5s;
+}.btn-index:hover{
+    color: #250c84;
+    cursor: pointer;
 }
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .banner{
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to left, #f3a81b, #f36a1a);
+    background-image: linear-gradient(to left, #f3a81b, #f3a81b, #f36a1a);
+    /* background-image: linear-gradient(to left, #065c54, #2ba99d); */
+    background-color: #065c54;
 }
 
 .banner .container{
@@ -114,7 +140,7 @@ h1 a {
 
 .card_titulo{
     width: 100%;
-    height: 24%;
+    height: 25%;
     background-color: #250c84;
     border-radius: 30px;
     display: flex;
@@ -131,7 +157,7 @@ h1 a {
 }
 
 .card_artistas{
-    height: 60%;
+    height: 70%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -146,22 +172,102 @@ h1 a {
     width: 48%;
     height: 42%;
     border-radius: 20px;
-    background-image: url(../assets/img/tropicalismo_img1.jpg);
-    background-size: cover;
+    /* background-image: url(../assets/img/Caetano_Veloso.jpg);
+    background-size: cover; */
     margin: 0.3%;
-    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
-    /* filter: saturate(0.5); */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     transition: all 1s;
 }
 .artista:hover{
-    transform: scale(104%)
-    
+    transform: scale(104%);
+    cursor: pointer;
 }
 
-/* .artista img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-} */
+.caetano{
+    background-image: url(../assets/img/Caetano_Veloso.jpg);
+    background-size: cover;
+}
+.gil{
+    background-image: url(../assets/img/Gilberto_Gil.jpg);
+    background-size: cover;
+}
+.mutantes{
+    background-image: url(../assets/img/os_mutantes.jpg);
+    background-size: cover;
+}
+.gal{
+    background-image: url(../assets/img/Gal_Costa.jpg);
+    background-size: cover;
+}
 
+
+.card_avaliacao{
+    display: flex;
+    flex-direction: column;
+    /* align-self: ; */
+    /* background-color: #f36a1a; */
+    background-color: #250c84;
+    border-radius: 42px;
+    height: 95%;
+    width: 95%;
+}
+
+.card_titulo_1{
+    width: 70%;
+    height: 15%;
+    font-size: 2em;
+    font-family: gill-sans-ultra-bold-regular;
+    color: #ff1973;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #250c84; */
+    /* padding: 2%; */
+}
+
+.estrelas{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 20%;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 1000;
+    align-items: center;
+    justify-content: center;
+    color: #ff1973;
+}
+
+.rating{
+    display: flex;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 80%;
+    background-color: #2ba99d;
+    border-radius: 20px;
+}
+
+.star{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color: #ff1973;
+    background-color: unset;
+    border: none;
+    padding: 0;
+}.star:hover{
+    cursor: pointer;
+    transform: rotate(200deg);
+}
+
+.card_grafico{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: #2ba99d;
+    border-radius: 42px;
+    height: 62%;
+    width: 95%;
+}
