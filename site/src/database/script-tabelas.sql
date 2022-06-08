@@ -13,6 +13,13 @@ CREATE TABLE usuario (
 	senha VARCHAR(50)
 );
 
+CREATE TABLE avaliacao (
+	idAvaliacao INT PRIMARY KEY AUTO_INCREMENT,
+	estrelas INT,
+    fkUsuario INT,
+	FOREIGN KEY (fk_usuario) REFERENCES usuario(id)
+);
+
 CREATE TABLE aviso (
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	titulo VARCHAR(100),
@@ -42,7 +49,7 @@ create table medida (
 );
 
 
-/* para sql server - remoto - produção */
+/* para sql server - remoto - produção /////////////////////////////////////////////*/
 CREATE TABLE usuario (
 	id INT PRIMARY KEY IDENTITY(1,1),
 	nome VARCHAR(50),

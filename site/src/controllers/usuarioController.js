@@ -94,9 +94,36 @@ function cadastrar(req, res) {
     }
 }
 
+
+function avaliar(req, res) {
+    // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
+    var fkUsuario = req.body.idUsuarioServer;
+    var avaliacao = req.body.avaliacaoServer;
+
+    // Faça as validações dos valores
+
+        // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
+        usuarioModel.avaliar(fkUsuario, avaliacao)
+            .then(
+                function (resultado) {
+                    res.json(resultado);
+                }
+            ).catch(
+                function (erro) {
+                    console.log(erro);
+                    console.log(
+                        "\nHouve um erro ao realizar a avaliação! Erro: ",
+                        erro.sqlMessage
+                    );
+                    res.status(500).json(erro.sqlMessage);
+                }
+            );
+        }
+
 module.exports = {
     entrar,
     cadastrar,
     listar,
-    testar
+    testar,
+    avaliar
 }
