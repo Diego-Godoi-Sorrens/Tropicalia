@@ -21,7 +21,7 @@ router.post("/autenticar", function (req, res) {
 });
 
 router.post("/avaliacao", function (req, res) {
-    usuarioController.avaliacao(req, res);
+    usuarioController.avaliar(req, res);
 });
 
 module.exports = router;
