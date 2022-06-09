@@ -24,4 +24,8 @@ router.post("/avaliacao", function (req, res) {
     usuarioController.avaliar(req, res);
 });
 
+router.get("/ultimasAvaliacoes/", function (req, res) {
+    usuarioController.ultimasAvaliacoes(req, res);
+});
+
 module.exports = router;

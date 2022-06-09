@@ -141,8 +141,8 @@ body{
 .card_titulo{
     width: 100%;
     height: 25%;
-    background-color: #250c84;
-    border-radius: 30px;
+    background-color: #2ba99d;
+    /* border-radius: 30px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,7 +171,7 @@ body{
     display: flex;
     width: 48%;
     height: 42%;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     /* background-image: url(../assets/img/Caetano_Veloso.jpg);
     background-size: cover; */
     margin: 0.3%;
@@ -205,9 +205,9 @@ body{
     display: flex;
     flex-direction: column;
     /* align-self: ; */
-    /* background-color: #f36a1a; */
-    background-color: #250c84;
-    border-radius: 42px;
+    background-color: #2ba99d;
+    /* background-color: #250c84; */
+    /* border-radius: 42px; */
     height: 95%;
     width: 95%;
 }
@@ -228,7 +228,7 @@ body{
 .estrelas{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     height: 20%;
     font-family: "Source Code Pro", monospace;
     font-weight: 1000;
@@ -244,7 +244,7 @@ body{
     align-items: center;
     height: 60%;
     width: 80%;
-    background-color: #2ba99d;
+    background-color: #f3a81b;
     border-radius: 20px;
 }
 
@@ -265,9 +265,17 @@ body{
 .card_grafico{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     align-self: center;
-    background-color: #2ba99d;
+    background-color: #f3a81b;
     border-radius: 42px;
     height: 62%;
     width: 95%;
+}
+
+.grafico{
+    width: 90%;
+    color: white;
+    margin: 0 5%;
 }
