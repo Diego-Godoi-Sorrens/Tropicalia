@@ -21,15 +21,128 @@
 
 </head>
 
-<body onload="validarSessao(), ultimasAvaliacoes(()=> jogarDados(()=> setTimeout(atualizarGrafico, 2000)))">
+<body onload="ultimasAvaliacoes(()=> jogarDados(()=> setTimeout(atualizarGrafico, 1000)))">
 <!-- <body>  -->
 
     <div class="banner">
 
+        <div class="menu_caetano caetano1" id="card_caetano">
+
+            <div class="texto">
+                <div class="titulo caetano2"> <span class="inicial">C</span>aetano <span class="inicial">V</span>eloso</div>
+
+                <div class="origem caetano3">Santo Amaro, BA, 7 de agosto de 1942</div>
+
+                <span class="paragrafos caetano4">
+                    <p>
+                        Foi uma das lideranças do movimento, já que foi um dos responsáveis por estruturar as ideias, escolher os membros que viriam a fazer parte do movimento, além de compor, tocar e apresentar muitas das músicas mais marcantes do movimento, se apresentou em vários festivais, como sua performance com os Mutantes “É proibido proibir”, onde se exaltou sobre a plateia dando um discurso bastante acalorado, sendo vaiado e aplaudido quase que em proporções equivalentes.
+                    </p>
+                    <p>
+                        Também teve por 3 meses um programa de televisão juntamente com Gilberto Gil chamado Divino Maravilhoso, que não possuía roteiro, onde basicamente os artistas faziam apresentações livres em cima do palco, posteriormente cancelado após Caetano ser preso, torturado e exilado pelo regime militar, e para poder fugir teve que realizar um show às pressas. 
+                    </p>
+                </span>
+            </div>
+
+            <div class="card_img">
+                <img src="../assets/img/Caetano_Veloso.jpg">
+            </div>
+
+            <a href="javascript:void(0)" class="fechar" onclick="fechar_card_caetano()">X</a>
+
+        </div>
+
+        <div class="menu_gil gil1" id="card_gil">
+
+            <div class="texto">
+                <div class="titulo gil2"> <span class="inicial gil2">G</span>ilberto <span class="inicial gil2">G</span>il</div>
+
+                <div class="origem gil3">Salvador, BA, 26 de julho de 1942</div>
+
+                <span class="paragrafos gil4">
+                    <p>
+                        O maior idealizador do movimento tropicalista, sendo o compositor de muitas das músicas que o representaram. 
+                    </p>
+                    <p>
+                        Empenhado na divulgação da estética tropicalista, que foi muito vaiada pelo publico inicialmente, produziu o seu primeiro disco completamente tropicalista, e realizou diversos shows e apresentações pelo Brasil e Europa sendo diversas vezes vaiado, e até mesmo desclassificado, isso do festival de 1968, porém sua canção em parceria com Caetano Veloso, Divino Maravilhoso, ficou em terceiro lugar no mesmo festival, só que na  voz de Gal Costa, obra essa que se tornou o nome do programa televisivo ao qual apresentou, novamente, com Caetano Veloso. 
+                    </p>
+                    <p>
+                        No final, teve o mesmo destino que seu amigo, foi preso, torturado e exilado pelo regime militar, e para se despedir fez a canção “Aquele Abraço”, que acabou por representar sua situação.
+                    </p>
+                </span>
+            </div>
+
+            <div class="card_img">
+                <img src="../assets/img/Gilberto_Gil.jpg">
+            </div>
+
+            <a href="javascript:void(0)" class="fechar" onclick="fechar_card_gil()">X</a>
+
+        </div>
+
+        <div class="menu_mutantes mutantes1" id="card_mutantes">
+
+            <div class="texto">
+                <div class="titulo mutantes2"> <span class="inicial mutantes2">O</span>s <span class="inicial mutantes2">M</span>utantes</div>
+
+                <div class="origem mutantes3">(Rita Lee, Arnaldo e Sérgio Baptista)<br>
+                    São Paulo, SP, 31 de dezembro de 1947, 6 de julho de 1948 e
+                    1 de dezembro de 1950
+                </div>
+
+                <span class="paragrafos mutantes4">
+                    <p>
+                        Tropicalistas esses que ao se basearem nos roqueiros estrangeiros foram os responsáveis por introduzir a guitarra elétrica ao movimento, instrumento bastante odiado pelos brasileiros. Essa banda, antes de possuir um nome, já era conhecida por chocar seus ouvintes, com músicas consideradas transgressoras, visto que suas duas primeiras obras tinham o nome “O suicida” e “Apocalipse” não há o que duvidar quanto a sua fama.
+                    </p>
+                    <p>
+                        Em 1968 lançam seu primeiro disco, tendo incorporado todas as características e ideias da Tropicália nele, incluindo alguns outros membros ilustres do movimento como Caetano e Gil. E logicamente participaram do disco manifesto, Tropicália ou Panis et Circencis. Também performaram na marcante “É proibido proibir” juntamente com Caetano Veloso, e ao som de vaias, viraram de costas, e continuaram a tocar.
+                    </p>
+                    <p>
+                        Foram perseguidos pela polícia após contrabandearem instrumentos proibidos para dentro do Brasil após uma excursão à França, e a gota d’água foi quando em um show com Caetano e Gil hastearam uma bandeira com o cadáver de um traficante morto pelos militares onde estava escrito “Seja Marginal Seja Herói”.
+                    </p>
+                </span>
+            </div>
+
+            <div class="card_img">
+                <img src="../assets/img/os_mutantes.jpg">
+            </div>
+
+            <a href="javascript:void(0)" class="fechar" onclick="fechar_card_mutantes()">X</a>
+
+        </div>
+
+        <div class="menu_gal gal1" id="card_gal">
+
+            <div class="texto">
+                <div class="titulo gal2"> <span class="inicial">G</span>al <span class="inicial">C</span>osta</div>
+
+                <div class="origem gal3">Salvador, BA, 26 de setembro de 1945</div>
+
+                <span class="paragrafos gal4">
+                    <p>
+                        Teve sua fase na Bossa Nova, onde adotava um estilo mais “comportado”, porém, se encontrou mesmo na Tropicália, podendo utilizar de toda sua sensualidade como a própria ferramenta de transgressão juntamente a estética caótica do movimento. Sua voz passa a encontrar notas mais poderosas em contraste com as notas suaves que estava acostumada a cantar na Bossa Nova.
+                    </p>
+                    <p>
+                        Uma das vozes mais reconhecidas do movimento, Gal Costa representava perfeitamente o movimento, pois era capaz de trazer elementos gringos e transgressores e mesclá-los aos ritmos tipicamente brasileiros.
+                    </p>
+                </span>
+            </div>
+
+            <div class="card_img">
+                <img src="../assets/img/Gal_Costa.jpg">
+            </div>
+
+            <a href="javascript:void(0)" class="fechar" onclick="fechar_card_gal()">X</a>
+
+        </div>
+
+
+
+
+
         <div class="header_v">
 
             <button onclick="abrir_menu()" id="abrir-menu-dash" class="abrir-dash">
-                <h1><a>☰</a></h1>
+                <!-- <h1><a>☰</a></h1> -->
             </button>
 
             <div class="btn-sair" onclick="limparSessao()">
@@ -50,20 +163,16 @@
                 <div class="card_titulo"> <span class="inicial">P</span>rincipais  <span class="inicial">A</span>rtistas</div>
 
                 <div class="card_artistas">
-                    <div class="artista caetano" onclick="caetano_card()"> 
-                        <!-- <img src="../assets/img/tropicalismo_img1.jpg">  -->
+                    <div class="artista caetano" onclick="caetano_card()">
                     </div>
 
-                    <div class="artista mutantes" onclick="mutantes_card()"> 
-                        <!-- <img src="../assets/img/tropicalismo_img1.jpg">  -->
+                    <div class="artista mutantes" onclick="mutantes_card()">
                     </div>
 
-                    <div class="artista gil" onclick="gil_card()"> 
-                        <!-- <img src="../assets/img/tropicalismo_img1.jpg">  -->
+                    <div class="artista gil" onclick="gil_card()">
                     </div>
 
-                    <div class="artista gal" onclick="gal_card()"> 
-                        <!-- <img src="../assets/img/tropicalismo_img1.jpg">  -->
+                    <div class="artista gal" onclick="gal_card()">
                     </div>
                 </div>
             </div>
@@ -112,6 +221,7 @@
             let current_star_level = i + 1;
             current_rating.innerHTML = `${current_star_level} de 5`;
 
+            console.log(id_usuario, current_star_level)
             allStars.forEach ((star, j) => {
 
                 if(current_star_level >= j + 1){
@@ -121,7 +231,6 @@
                 }
 
             })
-
             fetch("/usuarios/avaliacao", {
                 method: "POST",
                 headers: {
@@ -169,10 +278,14 @@
 
                 response.json().then(function (resposta) {
                 console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
-
-                for(var i = 0; i < 20; i++){
-                    listaAvaliacoes[i] = resposta[i].avaliacao;
+                //resposta = JSON.stringify(resposta);
+                for(var i = 0; i < resposta.length; i++) {
+                    listaAvaliacoes.push(resposta[i].contagem)
                 }
+                console.log(listaAvaliacoes);
+
+
+                
                 _callback();
                 });
 
@@ -189,18 +302,13 @@
     }
 
     function jogarDados(_callback){
+            data.datasets[0].data.push(listaAvaliacoes[0], listaAvaliacoes[1], listaAvaliacoes[2], listaAvaliacoes[3], listaAvaliacoes[4])
         
-        for (var i = 0 ; i < 20 ; i++){
-            data.datasets[0].data.push(listaAvaliacoes[i])
-            // console.log(listaAvaliacoes[i])
-        }
         _callback();
     }
 
     function atualizarGrafico(){
-
         myChart.update();
-
     }
 
 

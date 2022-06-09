@@ -23,43 +23,35 @@ function fechar() {
     document.getElementById("id_menu").style.width = "0";
 }
 
-function color(){
-    document.getElementById("id_menu").style.width="0";
-}
-
 /* Término da função do Menu *////////////////////////////////////////////////////////////////////////////
 
-/* Começo da função do slider *///////////////////////////////////////////////////////////////////////////
- 
-// let contador = 1;
+function caetano_card() {
+    document.getElementById("card_caetano").style.height = "95vh";
+}
+function fechar_card_caetano() {
+    document.getElementById("card_caetano").style.height = "0";
+}
 
-// setInterval(function(){
-//     passar_slide();
-// }, 4000)
+function gil_card() {
+    document.getElementById("card_gil").style.height = "95vh";
+}
+function fechar_card_gil() {
+    document.getElementById("card_gil").style.height = "0";
+}
 
-// function passar_slide(){
+function mutantes_card() {
+    document.getElementById("card_mutantes").style.height = "95vh";
+}
+function fechar_card_mutantes() {
+    document.getElementById("card_mutantes").style.height = "0";
+}
 
-//     document.getElementById("radio1").checked = true;
-//     contador++;
-//     if(contador > 4){
-//         contador = 1;
-//     }
-//     document.getElementById("radio"+contador).checked = true;
-// }
-
-/* Término da função do slider *//////////////////////////////////////////////////////////////////////////
-
-/* Funções da página de cadastro */////////////////////////////////////////////////////////////////////
-
-// function enviar_solicitacao(){
-//     window.onbeforeunload = () => {
-//         for(const form of document.getElementsByTagName('form')) {
-//           form.reset();
-//         }
-//     }
-// }
-
-/* Término das funções da página cadastro */////////////////////////////////////////////////////////////
+function gal_card() {
+    document.getElementById("card_gal").style.height = "95vh";
+}
+function fechar_card_gal() {
+    document.getElementById("card_gal").style.height = "0";
+}
 
 /* Funções de sessão *///////////////////////////////////////////////////////////////////////////////////
 
