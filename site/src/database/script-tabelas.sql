@@ -17,7 +17,7 @@ CREATE TABLE avaliacao (
 	idAvaliacao INT PRIMARY KEY AUTO_INCREMENT,
 	avaliacao INT,
     fkUsuario INT,
-	FOREIGN KEY (fkusuario) REFERENCES usuario(id)
+	FOREIGN KEY (fkUsuario) REFERENCES usuario(id)
 );
 
 select * from  usuario;
