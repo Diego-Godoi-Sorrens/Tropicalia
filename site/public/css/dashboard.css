@@ -161,6 +161,7 @@ body{
     /* border: #065c54 solid 1px; */
     /* color: #fff; */
     font-family: "Source Code Pro", monospace;
+    text-align: justify;
 }
 
 .fechar{
@@ -172,6 +173,7 @@ body{
     width: 5%;
     height: 100%;
     color: #f3a81b;
+    transition: all 0.2s;
 }
 
 .card_img{
@@ -287,9 +289,9 @@ body{
     display: flex;
     width: 100vw;
     height: 100vh;
-    /* background-image: linear-gradient(to left, #f3a81b, #f3a81b, #f36a1a); */
+    background-image: linear-gradient(to left, #f3a81b, #f3a81b, #f36a1a);
     /* background-image: linear-gradient(to left, #065c54, #2ba99d); */
-    background-color: #f3a81b;
+    /* background-color: #f3a81b; */
 }
 
 .banner .container{

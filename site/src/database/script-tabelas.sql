@@ -88,24 +88,12 @@ INSERT INTO avaliacao (avaliacao, fkUsuario) VALUES
 (1, 30);
 
 INSERT INTO avaliacao (avaliacao, fkUsuario) VALUES 
-(5, 1),
-(5, 1),
-(5, 1),
-(5, 1),
-(5, 1),
-(5, 1),
-(5, 1),
-(5, 1),
-(5, 1),
-(5, 1),
-(5, 1),
-(5, 1),
-(5, 1),
-(5, 1),
-(5, 1),
-(5, 1),
-(5, 1),
-(5, 1),
-(5, 1);
+(5, 11),
+(5, 13),
+(5, 24),
+(5, 4),
+(5, 28),
+(5, 10);
 
-SELECT * FROM avaliacao order by idAvaliacao desc group by idAvaliacao limit 20;
+
+select count(*) as contagem, avaliacao from (select * from avaliacao order by idAvaliacao desc limit 20) avaliacao group by avaliacao;

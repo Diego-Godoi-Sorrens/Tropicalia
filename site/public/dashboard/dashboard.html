@@ -44,7 +44,7 @@
             </div>
 
             <div class="card_img">
-                <img src="../assets/img/Caetano_Veloso.jpg">
+                <img src="../assets/img/group_caetano.png">
             </div>
 
             <a href="javascript:void(0)" class="fechar" onclick="fechar_card_caetano()">X</a>
@@ -72,7 +72,7 @@
             </div>
 
             <div class="card_img">
-                <img src="../assets/img/Gilberto_Gil.jpg">
+                <img src="../assets/img/group_gil.png">
             </div>
 
             <a href="javascript:void(0)" class="fechar" onclick="fechar_card_gil()">X</a>
@@ -103,7 +103,7 @@
             </div>
 
             <div class="card_img">
-                <img src="../assets/img/os_mutantes.jpg">
+                <img src="../assets/img/group_mutantes.png">
             </div>
 
             <a href="javascript:void(0)" class="fechar" onclick="fechar_card_mutantes()">X</a>
@@ -128,7 +128,7 @@
             </div>
 
             <div class="card_img">
-                <img src="../assets/img/Gal_Costa.jpg">
+                <img src="../assets/img/group_gal.png">
             </div>
 
             <a href="javascript:void(0)" class="fechar" onclick="fechar_card_gal()">X</a>
@@ -279,12 +279,11 @@
                 response.json().then(function (resposta) {
                 console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
                 //resposta = JSON.stringify(resposta);
+
                 for(var i = 0; i < resposta.length; i++) {
                     listaAvaliacoes.push(resposta[i].contagem)
                 }
-                console.log(listaAvaliacoes);
-
-
+                // console.log(listaAvaliacoes);
                 
                 _callback();
                 });
