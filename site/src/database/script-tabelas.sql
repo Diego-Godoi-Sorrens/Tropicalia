@@ -97,3 +97,7 @@ INSERT INTO avaliacao (avaliacao, fkUsuario) VALUES
 
 
 select count(*) as contagem, avaliacao from (select * from avaliacao order by idAvaliacao desc limit 20) avaliacao group by avaliacao;
+
+select count(*) as contagem, avaliacao from (select * from avaliacao order by idAvaliacao) avaliacao group by avaliacao;
+
+-- select count(*) as contagem from (select * from avaliacao order by idAvaliacao desc limit 20) avaliacao group by avaliacao;

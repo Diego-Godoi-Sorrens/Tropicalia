@@ -54,24 +54,3 @@ function fechar_card_gal() {
 }
 
 /* Funções de sessão *///////////////////////////////////////////////////////////////////////////////////
-
-// function validarSessao() {
-
-//     var idUsuario = sessionStorage.ID_USUARIO;
-//     var nome = sessionStorage.NOME_USUARIO;
-//     var email = sessionStorage.EMAIL_USUARIO;
-//     var empresa = sessionStorage.FK_EMPRESA;
-
-//     if (email != null && nome != null && idUsuario != null && empresa != null) {
-//         perfil.innerHTML = `Olá, ${nome}`
-//     } else {
-//         window.location = "../Login.html";
-//     }
-// }
-
-// function limparSessao() {
-//     sessionStorage.clear();
-//     window.location = "../Login.html";
-// }
-
-/* Término das funções de sessão */
